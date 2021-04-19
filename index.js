@@ -15,8 +15,8 @@ app.get('/api',(req, res) => {
 app.post('/api/Login',(req, res) => {  
     //Mock user  
     const user ={  
-        username: 'jk',  
-        email: 'jaykrishnareddy@gmail.com'  
+        username: 'Latif',  
+        email: 'Latif@gmail.com'  
     }  
     jwt.sign({user:user},'secretkey',{expiresIn: '30s'},(err,token)=>{  
         res.json({token})  
